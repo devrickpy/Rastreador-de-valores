@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/0b45a14277.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="title">
+        <h1 class="tit">RK FINANÇAS</h1>
+    </div>
+    <a id="funciona" onclick="funcionamento()">Como funciona?</a>
+    <div id="funciona1"></div>
+    <div class="controlers">
+        <div class="entradas">
+           <h1 class="tit1">Entradas</h1>
+           <h3 id="totalEnt"></h3>
+        </div>
+        <div class="saidas">
+            <h1 class="tit1">Saídas</h1>
+            <h3 id="totalSai"></h3>
+        </div>
+        <div class="total">
+            <h1 class="tit1">Total</h1>
+            <h3 id="total"></h3>
+        </div>
+    </div>
+    <div class="entry">
+        <div class="inputs1">
+            <label>Descrição</label>
+            <br>
+            <input class="input1" type="text" id="inputDesc" name="desc" placeholder="Digite a descrição">
+        </div>
+        <div class="inputs">
+            <label>Valor</label>
+            <br>
+            <input class="input2" type="number" id="inputValor" name="valor" placeholder="digite o valor">
+        </div>
+        
+        <div class="radios">
+            <br>
+            <input type="radio" name="opcao" value="opcao1" checked> Entrada
+            <input type="radio" name="opcao" value="opcao2"> Saída
+        </div>
+        <div class="botao">
+           <button onclick="adicionar()" type="submit">Adicionar</button>
+        </div>
+    </div>
+    <div class="adicionados">
+        <h3 class="ref">Descrição</h3>
+        <h3 class="ref">Valor</h3>
+        <h3 class="ref">Tipo</h3>
+        <br>
+    </div>
+    <hr class="linha">
+    <div id="descricoes">
+    </div>
+   
+    <script src="index.js"></script>
+</body>
+</html>
